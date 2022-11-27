@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="647.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <children>
+      <Text layoutX="175.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Bus Route">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Button layoutX="36.0" layoutY="36.0" mnemonicParsing="false" onAction="#gotoViewBusSchedule" prefHeight="25.0" prefWidth="56.0" text="Back" />
+      <TextField id="tripIdfield" fx:id="tripIdfield" layoutX="157.0" layoutY="254.0" prefHeight="25.0" prefWidth="265.0" promptText="Enter Trip ID" />
+      <TextField id="busdepartVenuefield" fx:id="busdepartVenuefield" layoutX="157.0" layoutY="324.0" prefHeight="25.0" prefWidth="265.0" promptText="Enter new Departure Venue" />
+      <TextField id="busArrivalVenuefield" fx:id="busArrivalVenuefield" layoutX="157.0" layoutY="384.0" prefHeight="25.0" prefWidth="265.0" promptText="Enter new Arrival Venue" />
+      <Button id="savebtn" layoutX="246.0" layoutY="506.0" mnemonicParsing="false" onAction="#save_Route" prefHeight="25.0" prefWidth="107.0" text="Save" />
+      <TextField id="textField" fx:id="busServiceField" layoutX="153.0" layoutY="191.0" prefHeight="25.0" prefWidth="265.0" promptText="Enter the name of bus service" />
+      <Label fx:id="confirmLabel" layoutX="195.0" layoutY="548.0" prefHeight="17.0" prefWidth="210.0" />
+   </children>
+</AnchorPane>

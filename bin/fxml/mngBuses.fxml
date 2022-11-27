@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="624.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.bus_seat_reservation_system">
+   <children>
+      <Text layoutX="207.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage  Buses">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Button layoutX="130.0" layoutY="300.0" mnemonicParsing="false" onAction="#goToViewSchedule" prefHeight="25.0" prefWidth="293.0" text="Manage Trips" />
+      <Button layoutX="130.0" layoutY="355.0" mnemonicParsing="false" onAction="#goToStatusScreen" prefHeight="25.0" prefWidth="293.0" text="View Live Status of trips" />
+      <Button layoutX="34.0" layoutY="27.0" mnemonicParsing="false" onAction="#gotoLogin" text="LogOut" />
+      <Button layoutX="130.0" layoutY="411.0" mnemonicParsing="false" onAction="#gotoManageBuss" prefHeight="25.0" prefWidth="293.0" text="Manage Buses" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="613.0" prefWidth="762.0" style="-fx-background-color: 2F374B;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <children>
+      <Text layoutX="8.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bus Reservation System" wrappingWidth="198.4169921875">
+         <font>
+            <Font name="Century Gothic" size="22.0" />
+         </font>
+      </Text>
+      <TabPane layoutX="107.0" layoutY="120.0" prefHeight="374.0" prefWidth="489.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab>
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField id="adminusernameField" fx:id="SUsername" layoutX="26.0" layoutY="50.0" prefHeight="25.0" prefWidth="164.0" promptText="User Name here" />
+                        <PasswordField id="adminpasswordField" fx:id="SCnic" layoutX="261.0" layoutY="50.0" prefHeight="25.0" prefWidth="184.0" promptText="CNIC here" />
+                        <Button id="adminProceedBtn" fx:id="signup" layoutX="162.0" layoutY="225.0" mnemonicParsing="false" onAction="#CustomerRegsiter" prefHeight="25.0" prefWidth="170.0" text="SignUp" />
+                        <Label layoutX="353.0" layoutY="309.0" prefHeight="17.0" prefWidth="55.0" text="Done?" />
+                        <Button id="adminProceedBtn" layoutX="401.0" layoutY="305.0" mnemonicParsing="false" onAction="#gotoLogin" prefHeight="25.0" prefWidth="74.0" text="Login" />
+                        <Label fx:id="result" layoutX="122.0" layoutY="271.0" prefHeight="17.0" prefWidth="247.0" />
+                        <TextField id="adminusernameField" fx:id="SEmail" layoutX="27.0" layoutY="111.0" prefHeight="25.0" prefWidth="164.0" promptText="Email here" />
+                        <TextField id="adminusernameField" fx:id="Spassword" layoutX="261.0" layoutY="111.0" prefHeight="25.0" prefWidth="184.0" promptText="Password here" />
+                        <TextField id="adminusernameField" fx:id="Sprofilepic" layoutX="25.0" layoutY="173.0" prefHeight="25.0" prefWidth="168.0" promptText="Profile picture path here" />
+                        <TextField id="adminusernameField" fx:id="SPhone" layoutX="261.0" layoutY="173.0" prefHeight="25.0" prefWidth="184.0" promptText="Phone Number here" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Text layoutX="173.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome ! Please register.." wrappingWidth="310.4169921875">
+         <font>
+            <Font name="Cascadia Mono Regular" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

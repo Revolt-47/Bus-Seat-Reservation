@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="613.0" prefWidth="762.0" style="-fx-background-color: 2F374B;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <children>
+      <Text layoutX="8.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bus Reservation System" wrappingWidth="198.4169921875">
+         <font>
+            <Font name="Century Gothic" size="22.0" />
+         </font>
+      </Text>
+      <TabPane layoutX="107.0" layoutY="160.0" prefHeight="374.0" prefWidth="489.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab>
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField id="adminusernameField" fx:id="Username" layoutX="116.0" layoutY="49.0" prefHeight="25.0" prefWidth="283.0" promptText="CNIC here" />
+                        <PasswordField id="adminpasswordField" fx:id="Password" layoutX="116.0" layoutY="113.0" prefHeight="25.0" prefWidth="283.0" promptText="Password here" />
+                        <MenuButton fx:id="userType" layoutX="116.0" layoutY="198.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="User type">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#AdminLogin" text="Admin" />
+                            <MenuItem mnemonicParsing="false" onAction="#CustomerLogin" text="Customer" />
+                          </items>
+                        </MenuButton>
+                        <Button id="adminProceedBtn" fx:id="signup" layoutX="273.0" layoutY="243.0" mnemonicParsing="false" onAction="#gotoSignUp" prefHeight="25.0" prefWidth="128.0" text="SignUp" />
+                        <Label layoutX="138.0" layoutY="247.0" prefHeight="17.0" prefWidth="128.0" text="Not a member ?" />
+                        <Button id="adminProceedBtn" layoutX="273.0" layoutY="198.0" mnemonicParsing="false" onAction="#afterLogin" prefHeight="25.0" prefWidth="128.0" text="Login" />
+                        <Label fx:id="error" layoutX="138.0" layoutY="300.0" prefHeight="17.0" prefWidth="246.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Text layoutX="175.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome ! Login to Continue" wrappingWidth="310.4169921875">
+         <font>
+            <Font name="Cascadia Mono Regular" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

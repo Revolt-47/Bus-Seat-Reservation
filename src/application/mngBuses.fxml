@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="624.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.bus_seat_reservation_system">
+   <children>
+      <Text layoutX="207.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage  Buses">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Button layoutX="129.0" layoutY="169.0" mnemonicParsing="false" onAction="#gotoViewBusStatus" prefHeight="25.0" prefWidth="293.0" text="View Schedule" />
+      <Button layoutX="130.0" layoutY="229.0" mnemonicParsing="false" onAction="#gotoViewBusSchedule" prefHeight="25.0" prefWidth="293.0" text="View Live Status" />
+      <Button layoutX="130.0" layoutY="293.0" mnemonicParsing="false" onAction="#gotoViewBusSchedule" prefHeight="25.0" prefWidth="293.0" text="Manage Routes" />
+      <Button layoutX="34.0" layoutY="27.0" mnemonicParsing="false" onAction="#gotoViewBusStatus" text="Back" />
+      <TextField id="busServiceField" layoutX="133.0" layoutY="96.0" prefHeight="25.0" prefWidth="293.0" promptText="Enter the name of bus service" />
+   </children>
+</AnchorPane>

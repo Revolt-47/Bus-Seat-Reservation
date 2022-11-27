@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="442.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerController">
+   <children>
+      <Label layoutX="178.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="270.0" text="Bus Ticket Reservation System">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="218.0" layoutY="42.0" prefHeight="25.0" prefWidth="191.0" text="Book a Bus Ticket">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button id="Next1" layoutX="218.0" layoutY="141.0" mnemonicParsing="false" onAction="#searchTrip" prefHeight="25.0" prefWidth="167.0" text="Refresh" />
+      <Button layoutX="6.0" layoutY="22.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Back" />
+      <Label fx:id="tripSearch" layoutX="396.0" layoutY="330.0" prefHeight="17.0" prefWidth="201.0" />
+      <TextArea layoutX="89.0" layoutY="250.0" prefHeight="80.0" prefWidth="477.0" />
+      <Label layoutX="95.0" layoutY="221.0" text="Reservation ID" />
+   </children>
+</AnchorPane>

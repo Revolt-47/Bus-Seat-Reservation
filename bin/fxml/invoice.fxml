@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="613.0" prefWidth="762.0" style="-fx-background-color: 2F374B;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerController">
+   <children>
+      <VBox layoutX="13.0" layoutY="178.0" prefHeight="270.0" prefWidth="189.0" />
+      <Text layoutX="201.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bus Reservation System" wrappingWidth="288.4169921875">
+         <font>
+            <Font name="Century Gothic" size="22.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="126.0" layoutY="84.0" prefHeight="456.0" prefWidth="391.0" style="-fx-background-color: grey;">
+         <children>
+            <TextField fx:id="ticketno" layoutX="153.0" layoutY="49.0" prefHeight="25.0" prefWidth="83.0" />
+            <TextField fx:id="namef" layoutX="57.0" layoutY="166.0" prefHeight="25.0" prefWidth="119.0" />
+            <Label layoutX="207.0" layoutY="127.0" prefHeight="17.0" prefWidth="65.0" text="Trip ID" textFill="#f2efef" />
+            <TextField fx:id="tripIdf" layoutX="207.0" layoutY="166.0" prefHeight="25.0" prefWidth="119.0" />
+            <TextField fx:id="seatnof" layoutX="57.0" layoutY="242.0" prefHeight="25.0" prefWidth="119.0" />
+            <TextField fx:id="faref" layoutX="207.0" layoutY="242.0" prefHeight="25.0" prefWidth="119.0" />
+            <TextField fx:id="departTimef" layoutX="57.0" layoutY="325.0" prefHeight="25.0" prefWidth="119.0" />
+            <TextField fx:id="departLocf" layoutX="207.0" layoutY="325.0" prefHeight="25.0" prefWidth="119.0" />
+            <TextField fx:id="arrivalTime" layoutX="57.0" layoutY="401.0" prefHeight="25.0" prefWidth="119.0" />
+            <TextField fx:id="arrivalLoc" layoutX="207.0" layoutY="401.0" prefHeight="25.0" prefWidth="119.0" />
+            <Label layoutX="57.0" layoutY="127.0" prefHeight="17.0" prefWidth="65.0" text="Name" textFill="#f2efef" />
+            <Label layoutX="207.0" layoutY="214.0" prefHeight="17.0" prefWidth="119.0" text="Fare Amount" textFill="#f2efef" />
+            <Label layoutX="57.0" layoutY="214.0" prefHeight="17.0" prefWidth="65.0" text="Seat no" textFill="#f2efef" />
+            <Label layoutX="57.0" layoutY="285.0" prefHeight="17.0" prefWidth="119.0" text="Departure Time" textFill="#f2efef" />
+            <Label layoutX="207.0" layoutY="285.0" prefHeight="17.0" prefWidth="119.0" text="Departure Location" textFill="#f2efef" />
+            <Label layoutX="57.0" layoutY="364.0" prefHeight="17.0" prefWidth="119.0" text="Arrival Time" textFill="#f2efef" />
+            <Label layoutX="207.0" layoutY="364.0" prefHeight="17.0" prefWidth="119.0" text="Arrival Location" textFill="#f2efef" />
+            <Label layoutX="162.0" layoutY="26.0" prefHeight="17.0" prefWidth="65.0" text="Receipt No." textFill="#f2efef" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="29.0" layoutY="27.0" mnemonicParsing="false" text="Back" />
+      <Label fx:id="ticketConfirmation" layoutX="398.0" layoutY="548.0" prefHeight="30.0" prefWidth="288.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="256.0" layoutY="52.0" mnemonicParsing="false" onAction="#generateInvoice" prefHeight="25.0" prefWidth="127.0" text="Generate Invoice" />
+      <Button layoutX="304.0" layoutY="551.0" mnemonicParsing="false" onAction="#BookTicket" text="BOOK" />
+   </children>
+</AnchorPane>

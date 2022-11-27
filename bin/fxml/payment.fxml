@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="613.0" prefWidth="762.0" style="-fx-background-color: 2F374B;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerController">
+   <children>
+      <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bus Reservation System" wrappingWidth="198.4169921875">
+         <font>
+            <Font name="Century Gothic" size="22.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="113.0" layoutY="58.0" prefHeight="534.0" prefWidth="389.0">
+         <children>
+            <TextField id="nameoncardField" fx:id="cardName" layoutX="71.0" layoutY="197.0" prefHeight="25.0" prefWidth="248.0" promptText="Name on Card" />
+            <DatePicker id="expirydateField" fx:id="carddate" layoutX="71.0" layoutY="338.0" prefHeight="25.0" prefWidth="248.0" promptText="Expiry Date of Card" />
+            <TextField id="cardnumberField" fx:id="cardno" layoutX="71.0" layoutY="267.0" prefHeight="25.0" prefWidth="248.0" promptText="Card Number" />
+            <Text layoutX="123.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-- Payment Details --" wrappingWidth="178.4169921875">
+               <font>
+                  <Font name="Yu Gothic UI Regular" size="14.0" />
+               </font>
+            </Text>
+            <Button id="proceedtoinvoiceBtn" layoutX="106.0" layoutY="429.0" mnemonicParsing="false" onAction="#gotoInvoiceScreen" prefHeight="44.0" prefWidth="178.0" text="Confirm" />
+            <MenuButton fx:id="paymentType" layoutX="74.0" layoutY="94.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="242.0" text="Select Payment Option">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Credit Card" />
+              </items>
+            </MenuButton>
+            <Text layoutX="109.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Module" wrappingWidth="178.4169921875">
+               <font>
+                  <Font name="Cascadia Mono Regular" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

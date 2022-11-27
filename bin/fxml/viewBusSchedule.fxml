@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="662.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <children>
+      <Text layoutX="214.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Bus Schedule">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Button layoutX="23.0" layoutY="25.0" mnemonicParsing="false" onAction="#goToViewSchedule" prefHeight="25.0" prefWidth="56.0" text="Back" />
+      <Label layoutX="75.0" layoutY="168.0" text="Trip ID" />
+      <Label layoutX="389.0" layoutY="168.0" text="Departure Time" />
+      <Label layoutX="504.0" layoutY="168.0" text="Arrival time" />
+      <Label layoutX="192.0" layoutY="168.0" text="From" />
+      <Label layoutX="291.0" layoutY="168.0" text="To" />
+      <TextField id="busIdField1" fx:id="busIdField1" layoutX="51.0" layoutY="236.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="busIdField2" fx:id="busIdField2" layoutX="51.0" layoutY="299.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="busIdField3" fx:id="busIdField3" layoutX="51.0" layoutY="368.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="busIdField4" fx:id="busIdField4" layoutX="51.0" layoutY="438.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="fromfield1" fx:id="fromfield1" layoutX="166.0" layoutY="236.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="fromfield2" fx:id="fromfield2" layoutX="166.0" layoutY="299.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="fromfield3" fx:id="fromfield3" layoutX="166.0" layoutY="368.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="fromfield4" fx:id="fromfield4" layoutX="165.0" layoutY="438.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="tofield1" fx:id="tofield1" layoutX="274.0" layoutY="236.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="tofield2" fx:id="tofield2" layoutX="274.0" layoutY="299.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="tofield3" fx:id="tofield3" layoutX="274.0" layoutY="368.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="tofield4" fx:id="tofield4" layoutX="274.0" layoutY="438.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="departfield1" fx:id="departfield1" layoutX="382.0" layoutY="236.0" prefHeight="25.0" prefWidth="96.0" />
+      <TextField id="departfield2" fx:id="departfield2" layoutX="382.0" layoutY="299.0" prefHeight="25.0" prefWidth="96.0" />
+      <TextField id="departfield3" fx:id="departfield3" layoutX="382.0" layoutY="368.0" prefHeight="25.0" prefWidth="96.0" />
+      <TextField id="departfield4" fx:id="departfield4" layoutX="382.0" layoutY="438.0" prefHeight="25.0" prefWidth="96.0" />
+      <TextField id="arrivalfield1" fx:id="arrivalfield1" layoutX="496.0" layoutY="236.0" prefHeight="25.0" prefWidth="89.0" />
+      <TextField id="arrivalfield2" fx:id="arrivalfield2" layoutX="498.0" layoutY="299.0" prefHeight="25.0" prefWidth="89.0" />
+      <TextField id="arrivalfield3" fx:id="arrivalfield3" layoutX="496.0" layoutY="368.0" prefHeight="25.0" prefWidth="96.0" />
+      <TextField id="arrivalfield4" fx:id="arrivalfield4" layoutX="496.0" layoutY="438.0" prefHeight="25.0" prefWidth="96.0" />
+      <Button layoutX="137.0" layoutY="544.0" mnemonicParsing="false" onAction="#goto_Schedule" prefHeight="25.0" prefWidth="139.0" text="Change Bus Schedule" />
+      <TextField id="textField" fx:id="sbusServiceField" layoutX="159.0" layoutY="92.0" prefHeight="25.0" prefWidth="265.0" promptText="Enter the name of bus service" />
+      <Button layoutX="444.0" layoutY="92.0" mnemonicParsing="false" onAction="#displaySchedule" prefHeight="25.0" prefWidth="56.0" text="View" />
+      <Button layoutX="302.0" layoutY="544.0" mnemonicParsing="false" onAction="#edit_Route" prefHeight="25.0" prefWidth="139.0" text="Change Bus Route" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="662.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <children>
+      <Text layoutX="210.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Bus Status">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Button id="backbtn" layoutX="23.0" layoutY="25.0" mnemonicParsing="false" onAction="#gotoManageBuses" prefHeight="25.0" prefWidth="56.0" text="Back" />
+      <Label layoutX="162.0" layoutY="190.0" text="Trip ID" />
+      <Label layoutX="378.0" layoutY="190.0" text="Status" />
+      <TextField id="sbusIdField1" fx:id="sbusIdField1" layoutX="138.0" layoutY="258.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="busIdField2" fx:id="sbusIdField2" layoutX="138.0" layoutY="321.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="busIdField3" fx:id="sbusIdField3" layoutX="138.0" layoutY="390.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="busIdField4" fx:id="sbusIdField4" layoutX="138.0" layoutY="460.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="statusfield1" fx:id="statusfield1" layoutX="344.0" layoutY="258.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="statusfield2" fx:id="statusfield2" layoutX="344.0" layoutY="321.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="statusfield3" fx:id="statusfield3" layoutX="344.0" layoutY="390.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField id="statusfield4" fx:id="statusfield4" layoutX="344.0" layoutY="460.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField fx:id="statusBusField" layoutX="138.0" layoutY="120.0" prefHeight="25.0" prefWidth="230.0" promptText="Enter the name of bus service" />
+      <Button id="backbtn" layoutX="378.0" layoutY="120.0" mnemonicParsing="false" onAction="#view_BusStatus" prefHeight="25.0" prefWidth="56.0" text="View" />
+   </children>
+</AnchorPane>
